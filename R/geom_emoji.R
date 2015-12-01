@@ -5,7 +5,7 @@
 #' @author David L Miller
 #' @importFrom proto proto
 #' @importFrom grid rasterGrob
-#' @export geom_emoji
+#' @export geom_belo
 #'
 #'
 #' @export
@@ -39,7 +39,7 @@ GeomEmoji <- proto(ggplot2:::Geom, {
 
   default_stat <- function(.) StatIdentity
   required_aes <- c("x", "y")
-  default_aes <- function(.) aes(size=0.2, emoji="1f697")
+  default_aes <- function(.) aes(size=0.1, emoji="belo")
   guide_geom <- function(.) "emoji"
 
   icon <- function(.) # a grob representing the geom for the webpage
@@ -58,7 +58,7 @@ GeomEmoji <- proto(ggplot2:::Geom, {
 })
 
 
-geom_emoji <- function(mapping = NULL, data = NULL, stat = "identity",
+geom_belo <- function(mapping = NULL, data = NULL, stat = "identity",
                        position = "identity", na.rm = FALSE,
                        show.legend = NA, inherit.aes = TRUE, ...) {
   layer(
