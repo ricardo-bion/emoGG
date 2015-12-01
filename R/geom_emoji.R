@@ -39,7 +39,7 @@ GeomEmoji <- proto(ggplot2:::Geom, {
 
   default_stat <- function(.) StatIdentity
   required_aes <- c("x", "y")
-  default_aes <- function(.) aes(size=0.05, emoji="1f697")
+  default_aes <- function(.) aes(size=0.2, emoji="1f697")
   guide_geom <- function(.) "emoji"
 
   icon <- function(.) # a grob representing the geom for the webpage
