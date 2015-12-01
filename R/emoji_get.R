@@ -33,7 +33,7 @@ stop("arg!")
   }else{
     url <- paste0(cdn, size, "/", input, format)
     print(url)
-    lapply(url, function(x) readPNG(getURLContent(x)))
+    lapply(url, function(x) readPNG(getURLContent("http://logok.org/wp-content/uploads/2014/07/airbnb-logo-belo-880x628.png")))
   }
 }
 
