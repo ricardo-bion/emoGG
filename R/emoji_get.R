@@ -32,6 +32,7 @@ emoji_get <- function(input, size=72){
 stop("arg!")
   }else{
     url <- paste0(cdn, size, "/", input, format)
+    print(url)
     lapply(url, function(x) readPNG(getURLContent(x)))
   }
 }
